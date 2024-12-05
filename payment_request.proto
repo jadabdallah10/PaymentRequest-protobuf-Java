@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package proto;
+option java_outer_classname = "PaymentRequestProtos";
+
+message PaymentRequest {
+    string transaction_id = 1;
+    string payer_name = 2;
+    string payee_name = 3;
+    double amount = 4;
+    string currency = 5;
+    string payment_date = 6;
+}
