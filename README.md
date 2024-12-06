@@ -107,8 +107,8 @@ java -cp ".;lib/protobuf-java-4.29.0.jar;build" ReadPaymentRequest
 #### Example Output:
 ```
 Transaction ID: 12345
-Payer Name: John Doe
-Payee Name: Alice Smith
+Payer Name: Jad Abdallah
+Payee Name: Hadi Ghandour
 Amount: 250.75
 Currency: USD
 Payment Date: 2024-12-04
@@ -159,8 +159,8 @@ public class WritePaymentRequest {
     public static void main(String[] args) {
         PaymentRequest request = PaymentRequest.newBuilder()
                 .setTransactionId("12345")
-                .setPayerName("John Doe")
-                .setPayeeName("Alice Smith")
+                .setPayerName("Jad Abdallah")
+                .setPayeeName("Hadi Ghandour")
                 .setAmount(250.75)
                 .setCurrency("USD")
                 .setPaymentDate("2024-12-04")
@@ -217,8 +217,4 @@ public class ReadPaymentRequest {
 
 ---
 
-## **Acknowledgments**
 
-This project uses [Protocol Buffers](https://developers.google.com/protocol-buffers) by Google.
-
----
